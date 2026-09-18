@@ -3,11 +3,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto25
+      java: corretto8
   pre_build:
     commands:
       - echo Initializing environment
-      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 147997152300 --region us-east-2 --query authorizationToken --output text`
+      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 147997152300 --region us-east-1 --query authorizationToken --output text`
 
   build:
     commands:
