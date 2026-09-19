@@ -20,8 +20,6 @@ phases:
 artifacts:
   files:
     - target/nextwork-web-project.war
-    artifacts:
-  files:
     - target/nextwork-web-project.war
     - appspec.yml
     - scripts/**/*
